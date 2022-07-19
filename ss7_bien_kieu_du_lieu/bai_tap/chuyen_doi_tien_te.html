@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    Amount <input type="text" id="dauvao">
+    From Currency
+    <select id="select1">
+        <option value="a">VND</option>
+        <option value="b">USD</option>
+    </select>
+    To Currency
+    <select id="select2">
+        <option value="a">VND</option>
+        <option value="b">USD</option>
+    </select>
+    <button onclick="myFunction()">Convert</button>
+</form>
+</body>
+<script>
+    function myFunction() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        let convert
+        if (select1 == select2) {
+            alert(giatrivao);
+        }
+       if(select1=='a'&& select2=='b'){
+           alert(giatrivao/24000);
+       }
+       if (select1=='b' && select2=='a'){
+           alert(giatrivao*24000);
+       }
+    }
+</script>
+</html>

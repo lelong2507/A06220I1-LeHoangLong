@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tinh</title>
+</head>
+<body>
+<h1>Caculator</h1>
+input number 1 <input type="text" id="n1">
+<br>
+<br>
+input number 2 <input type="text" id="n2">
+<br>
+<br>
+Operator
+<select id="operator">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+</select>
+<br>
+<br>
+Your result <input type="text" id="result">
+<br>
+<button onclick="myFunction()">Sumit</button>
+</body>
+<script>
+    function myFunction() {
+        let n1 = (document.getElementById('n1').value);
+        let n2 = (document.getElementById('n2').value);
+        let operator = (document.getElementById('operator').value);
+        let result = (document.getElementById('result').value);
+        if (operator == '+') {
+            result = parseInt(n1) + parseInt(n2)
+        }else if (operator== '-'){
+            result = parseInt(n1) - parseInt(n2)
+        }else if (operator== '*') {
+            result = parseInt(n1) * parseInt(n2)
+        }else{
+            result = parseInt(n1) / parseInt(n2)
+        }
+        document.getElementById('result').value = result;
+    }
+
+</script>
+</html>
