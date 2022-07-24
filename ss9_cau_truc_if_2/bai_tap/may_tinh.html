@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<div>
+    <input id="calculator" value="">
+    <br>
+    <button onclick="add(1)">1</button>
+    <button onclick="add(2)">2</button>
+    <button onclick="add(3)">3</button>
+    <button onclick="add('+')">+</button>
+    <br>
+    <button onclick="add(4)">4</button>
+    <button onclick="add(5)">5</button>
+    <button onclick="add(6)">6</button>
+    <button onclick="add('-')">-</button>
+    <br>
+    <button onclick="add(7)">7</button>
+    <button onclick="add(8)">8</button>
+    <button onclick="add(9)">9</button>
+    <button onclick="add('*')">*</button>
+    <br>
+    <button onclick="clear1()">C</button>
+    <button onclick="add(0)">0</button>
+    <button onclick="calculator()">=</button>
+    <button onclick="add('/')">/</button>
+    <button onclick="clearAll()">AC</button>
+</div>
+<script>
+    let string = '';
+    function add(a) {
+        string += a;
+        document.getElementById("calculator").value = string;
+        console.log(string);
+    }
+
+    function clear1() {
+        string = string.slice(0, string.length - 1);
+        document.getElementById("calculator").value = string;
+        console.log(string);
+    }
+
+    function calculator() {
+        string = eval(string).toString();
+        document.getElementById("calculator").value = string;
+        console.log(string);
+    }
+
+    function clearAll() {
+        string = '';
+        document.getElementById("calculator").value = string;
+        console.log(string);
+    }
+</script>
+
+</body>
+</html>

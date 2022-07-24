@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào số A:"));
+    let b = parseInt(prompt("Nhập vào số B:"));
+    let c = parseInt(prompt("Nhập vào số C:"));
+    let x1;
+    let x2;
+    let delta = b*b - 4*a*c;
+    if (delta <0){
+        alert("Phương trình vô nghiệm")
+    }else if(delta == 0){
+        alert("Phương trình có 2 nghiệm kép x1 = x2 = -b/2a")
+    }else{
+        alert("phương trình có 2 nghiệm phân biệt x1 && x2 = -b +||- Sqrt(delta) / 2*a")
+    }
+</script>
+
+</body>
+</html>
