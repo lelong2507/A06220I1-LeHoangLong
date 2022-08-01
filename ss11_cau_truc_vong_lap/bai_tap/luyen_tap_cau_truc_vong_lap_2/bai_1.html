@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = 1;
+    document.write(num1 + "<br>")
+    let num2 = 1;
+    document.write(num2 + "<br>");
+    let numTiepTheo;
+    for ( let i = 0; i < 100; i++){
+        numTiepTheo = num1 + num2;
+        num1 = num2;
+        num2 = numTiepTheo;
+        document.write(numTiepTheo + "<br>");
+    }
+</script>
+
+</body>
+</html>

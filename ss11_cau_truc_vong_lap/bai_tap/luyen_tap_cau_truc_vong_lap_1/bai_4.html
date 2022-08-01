@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1= 1;
+    let num2= 1;
+    let result;
+    for (let i = 0 ; i < 20; i++){
+        result = num1 + num2;
+        num1 = num2;
+        num2= result;
+        if ( result % 5 == 0){
+            console.log(result);
+            alert(result);
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>

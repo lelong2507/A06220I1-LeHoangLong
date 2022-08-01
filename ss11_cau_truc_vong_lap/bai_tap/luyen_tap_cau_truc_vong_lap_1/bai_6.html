@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1= 1;
+    let num2= 2;
+    let result;
+    for ( let i = 0; i < 30; i++){
+        result= num1 + num2;
+        num1= num2;
+        num2= result;
+        if(result % 7 == 0){
+            alert(result);
+        }
+    }
+</script>
+
+</body>
+</html>
