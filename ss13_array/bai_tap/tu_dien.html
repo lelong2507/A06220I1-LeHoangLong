@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Từ điển Anh - Việt</h1>
+<!--<form>-->
+<!--   English <input type="text" name="Search" placeholder="">-->
+<!--    <button type="submit" onclick="myFunction()y">Tìm</button>-->
+<!--</form>-->
+<script>
+    let keyWord = prompt('Mời bạn nhập từ cần tìm')
+    let engLishWords =  new Array("One","Two","Three","Four");
+    let vietNameseWord = new Array("Một","Hai","Ba","Bốn");
+    let index = -1;
+    for (let i = 0; i <= engLishWords.length; i++){
+        if (engLishWords[i] == keyWord){
+            index = i;
+        }
+    }
+    if(index != -1){
+        alert(vietNameseWord[index]);
+    }else{
+        alert("Khôngtimthay")
+    }
+</script>
+
+</body>
+</html>

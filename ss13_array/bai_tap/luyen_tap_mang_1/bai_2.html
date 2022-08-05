@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myNumber = [1,4,5,7,8,12,15,100,18,19,21,31,51];
+    let maxNumber = 0;
+    let index = -1;
+    for (let i = 0; i < myNumber.length;i++){
+        if (myNumber[i] > maxNumber ){
+            maxNumber = myNumber[i];
+            index = i;
+        }
+    }
+    alert(myNumber[index]);
+</script>
+
+</body>
+</html>
