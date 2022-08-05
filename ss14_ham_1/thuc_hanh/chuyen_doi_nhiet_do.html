@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<h1>Temperature Converter</h1>
+<body>
+<form>
+    Fahrenheit <input type="number" id="doF">
+    Celsius <input type="number" id="nhietDo">
+    <button onclick="myFunction()" id="ketQua">Click to change!</button>
+</form>
+<script>
+    function myFunction() {
+        let a = document.getElementById("doF").value;
+        let b = document.getElementById("nhietDo").value;
+        let result = 5/9 * (a - 32);
+           document.getElementById("nhietDo").value = result;
+    }
+</script>
+</body>
+</html>
