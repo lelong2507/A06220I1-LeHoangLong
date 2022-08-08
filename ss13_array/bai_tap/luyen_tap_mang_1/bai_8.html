@@ -6,7 +6,14 @@
 </head>
 <body>
 <script>
-    
+     let size = parseInt(prompt("Type your size"));
+    let array = new Array(size);
+    for(let i = 0; i < size; i++){
+        array[i] = parseInt(prompt("enter element:"));
+    }
+    array.sort().reverse();
+    alert(array);
+
 </script>
 
 </body>
