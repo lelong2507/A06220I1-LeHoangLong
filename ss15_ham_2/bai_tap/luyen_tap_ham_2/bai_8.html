@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let size = parseInt(prompt("Type something:"));
+   let array = new Array(size);
+   for (let i = 0; i < size; i++){
+       array[i] = parseInt(prompt("Enter your element:"));
+   }
+   function addType() {
+       array.reverse();
+       console.log(array);
+   }
+   addType();
+</script>
+</body>
+</html>

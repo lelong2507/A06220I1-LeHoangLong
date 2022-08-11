@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Chuyển từ meet sang feet</title>
 </head>
+<form>
+    Type your number <input type="number" id="dauvao">
+    <select id="selection1">
+        <option value="a">Meters</option>
+        <option value="b">Feet</option>
+    </select>
+    <select id="selection2">
+        <option value="a">Meters</option>
+        <option value="b">Feet</option>
+    </select>
+    <button onclick="myFunction()">Click to change</button>
+</form>
 <body>
-$END$
+<script>
+    function myFunction() {
+        let giatrivao = document.getElementById("dauvao").value;
+        let select1 = document.getElementById("selection1").value;
+        let select2 = document.getElementById("selection2").value;
+        if (select1 === select2){
+            alert(giatrivao);
+    }
+        if (select1 === 'a' && select2 === 'b'){
+            alert(0.305 * giatrivao);
+        }
+        if (select1 === 'b' && select2 === 'a'){
+            alert(3.279 * giatrivao);
+        }
+    }
+</script>
+
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    changeLocationOfNumber();
+    function changeLocationOfNumber(){
+        let n1 = prompt("Type your number:");
+        let n2 = prompt("Type your number:");
+        let result = n1 + ' ,' + n2;
+        alert(result);
+        return changeLocationOfNumber();
+    }
+</script>
+
+</body>
+</html>

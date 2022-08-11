@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nhỏ nhất</title>
+</head>
+<form>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <input type="number" id="c">
+    <button type="button" onclick="myFunction()">Click to know!</button>
+</form>
+<body>
+<script>
+    function myFunction(){
+        let n1 = parseInt(document.getElementById("a").value);
+        let n2 = parseInt(document.getElementById("b").value);
+        let n3 = parseInt(document.getElementById("c").value);
+        if (n1 > n2 && n1 > n3) {
+            alert(n1);
+        }else if (n2 > n3){
+            alert(n2);
+        }else{
+            alert(n3);
+        }
+
+    }
+</script>
+
+</body>
+</html>

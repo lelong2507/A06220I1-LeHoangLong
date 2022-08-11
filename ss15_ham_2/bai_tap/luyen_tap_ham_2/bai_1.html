@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số bình phương</title>
+</head>
+<body>
+<form>
+    Type your number:<input type="number" id="dauvao">
+    Your Result:<input type="number" id="yourResult">
+    <button type="button" onclick="myNumber()">Click to know your result!</button>
+</form>
+<script>
+    function myNumber(){
+        let yourNumber = document.getElementById("dauvao").value;
+        let result = yourNumber * yourNumber;
+        document.getElementById("yourResult").value = result;
+    }
+</script>
+</body>
+</html>

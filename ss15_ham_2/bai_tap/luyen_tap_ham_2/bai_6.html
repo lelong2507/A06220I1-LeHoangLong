@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<form>
+    <input type="number" id="dauvao">
+    <button type="button" onclick="myFunction()">Click to know</button>
+</form>
+<body>
+<script>
+    function myFunction() {
+        let giaTriVao = parseInt(document.getElementById("dauvao").value);
+        if (giaTriVao > 0) {
+            alert("Số bạn là số dương")
+        } else {
+            alert("Số bạn là số âm")
+        }
+    }
+</script>
+</body>
+</html>
