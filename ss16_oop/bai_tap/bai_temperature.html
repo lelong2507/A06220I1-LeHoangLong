@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    // cach_1
+  //   let doC = parseInt(prompt("Type your temperature:"));
+  //   let switchF;
+  //   let switchKevin;
+  // function doF(f) {
+  //     switchF = doC * 9/5 + 32;
+  //     document.write("Your F:"+  + switchF + "</br>");
+  // }
+  // function doKevin(k) {
+  //     switchKenvin = doC + 273.15;
+  //     document.write("Your Kevin:" + switchKenvin);
+  // }
+  // doF(doC);
+  // doKevin(doC);
+    //cach_2
+    class Temperature {
+        constructor(temperature){
+            this.doC = doC;
+            this.doF = doF;
+            this.doKevin = doKevin;
+        }
+    }
+    doC = parseInt(prompt("Type your number:"))
+    doF = doC * 9/5 + 32;
+    doKevin = doC + 273.15;
+
+    document.write(doF + "</br>");
+    document.write(doKevin);
+</script>
+</body>
+</html>
