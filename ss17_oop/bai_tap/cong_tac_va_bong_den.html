@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cong tac va bong den</title>
+</head>
+<body>
+<script>
+    class SwitchButton{
+        constructor(status,lamp) {
+            this.status = status;
+            this.lamp = lamp;
+        }
+        switchOn (anDeBat){
+            if (this.status == "anDebat"){
+                return this.status;
+            }
+        }
+        switchOff (anDeTat){
+            if (this.status == "anDeTat"){
+                return this.status;
+            }
+        }
+    }
+    class ElectricLamp{
+        constructor(status) {
+            this.status = status;
+        }
+        say (text){
+            console.log(this.status + ":" + text);
+        }
+        turnOn (bat){
+            if (this.status == "bat"){
+                return this.status;
+            }
+        }
+        turnOff (tat){
+            if (this.status == "tat"){
+                return this.status;
+            }
+        }
+    }
+    let turnOn = new SwitchButton('bat','den dang bat');
+    let lightOn = new ElectricLamp('bat');
+    lightOn.say("Den dang bat roi do ban")
+    console.log(lightOn);
+    console.log(turnOn);
+</script>
+</body>
+</html>
