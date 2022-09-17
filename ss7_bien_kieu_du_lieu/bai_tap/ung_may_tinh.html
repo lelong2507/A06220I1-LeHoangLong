@@ -30,7 +30,7 @@ Your result <input type="text" id="result">
         let n1 = (document.getElementById('n1').value);
         let n2 = (document.getElementById('n2').value);
         let operator = (document.getElementById('operator').value);
-        let result = (document.getElementById('result').value);
+        let result = document.getElementById('result').value;
         if (operator == '+') {
             result = parseInt(n1) + parseInt(n2)
         }else if (operator== '-'){
